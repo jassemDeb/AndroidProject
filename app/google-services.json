@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "322465296985",
+    "project_id": "tek-up-project-firebase",
+    "storage_bucket": "tek-up-project-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322465296985:android:6ae9a7ad6ee0008f4ff748",
+        "android_client_info": {
+          "package_name": "com.example.demotekup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322465296985-jepk3snb3hliaao9ehs6d4570ajpiv0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJzuIQrHuN2xvp20EQ_FA5YLwo4PXliXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322465296985-jepk3snb3hliaao9ehs6d4570ajpiv0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
