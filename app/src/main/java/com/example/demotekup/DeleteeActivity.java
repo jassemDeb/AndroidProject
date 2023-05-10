@@ -21,7 +21,6 @@ public class DeleteeActivity extends AppCompatActivity {
     private EditText deleteEmail, deletePassword ;
     private Button deleteButton ;
 
-    private FirebaseUser user1 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,21 +44,10 @@ public class DeleteeActivity extends AppCompatActivity {
                 }
                 if (pass.isEmpty()){
                     deletePassword.setError("Password cannot be empty");
-                } else {
-                    user1.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            if (task.isSuccessful()) {
-                                Toast.makeText(DeleteeActivity.this, "Success", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(DeleteeActivity.this , AminActivity.class));
-                            } else {
-                                Toast.makeText(DeleteeActivity.this, "Failed", Toast.LENGTH_SHORT).show();
-                            }
-
-                        }
-                    });
                 }
-            }
+
+                };
+
         });
     }
 }

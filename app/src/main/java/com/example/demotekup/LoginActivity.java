@@ -30,8 +30,11 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //pour lier le Layout à l'activité
         setContentView(R.layout.activity_login);
 
+        //lier les variables aux id
         auth = FirebaseAuth.getInstance();
         loginEmail = findViewById(R.id.login_mail);
         loginPassword = findViewById(R.id.login_password);
@@ -41,6 +44,8 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                //récupérer email et password
                 String email = loginEmail.getText().toString();
                 String pass = loginPassword.getText().toString();
 
@@ -51,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
                                     @Override
                                     public void onSuccess(AuthResult authResult) {
                                         Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                                        if (email == "admin@gmail.com") {
+                                        if (email.equals("admin@gmail.com")) {
                                             startActivity(new Intent(LoginActivity.this, AminActivity.class));
                                             finish();
 

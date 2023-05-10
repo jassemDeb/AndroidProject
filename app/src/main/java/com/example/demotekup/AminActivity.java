@@ -29,7 +29,7 @@ public class AminActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(AminActivity.this, MainActivity.class));
+                startActivity(new Intent(AminActivity.this, AdddActivity.class));
                 finish();
 
             }
@@ -40,6 +40,7 @@ public class AminActivity extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(AminActivity.this, DeleteeActivity.class));
                 finish();
+
 
             }
         });
