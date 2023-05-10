@@ -18,7 +18,8 @@ import com.google.firebase.auth.FirebaseAuth;
 public class AdddActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
-    private EditText addEmail, addPassword ;
+    private EditText addEmail;
+    private EditText addPassword ;
     private Button addButton ;
 
     @Override

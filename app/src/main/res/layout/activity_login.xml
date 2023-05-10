@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/visit"
-                android:text="Visit us in"
+                android:text="Visit us on"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:padding="8dp"
